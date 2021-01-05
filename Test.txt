@@ -1,0 +1,115 @@
+								Wonders Of HTML (HyperText Markup Language)
+
+
+1.   <!DOCTYPE html>		: Specifies version of html (Here it is HTML5).
+
+2.   <html>			: Every HTML code must be enclosed between basic HTML tags.
+
+3.   <head>			: It contains all the header information of the web page or document like the title of the page.
+
+4.   <title>TEXT</title>	: Mentions the title of a web page.
+
+5.   <body>			: The actual body of the page which will be visible to all the users.
+
+6.   <p>CONTENT</p>		: Paragraph Tag(Paragraph tag ignores all the change of lines and extra spaces within a paragraph - BY DEFAULT)
+	
+
+	0.  <h1,h2,....h6> TEXT </h1,/h2,..../h6>				: Heading Tag.
+	1.  <p align="center,left,right"> TEXT </p>				: Supports the alignment attribute and allows us to align our paragraphs.
+	2.  <br> and <hr>							: Break Tag (Breaks Line) and Horizontal Marging Tag (Creates a horizontal line).
+	3.  <pre> TEXT </pre> 							: To Compensate the drawbacks of paragraph tag.
+	4.  <b> TEXT </b> or <strong> TEXT </strong>				: To BOLD text.
+	5.  <i> TEXT </i> or <em> TEXT </em>					: To ITALIC Text.
+	6.  <mark> TEXT </mark>							: To Highlight Text.
+	7.  <sup> TEXT </sup> or <sub> TEXT </sub>				: To Subscript or Superscript Text.
+	8.  <small> TEXT </small>						: To Make Text Size Smaller.
+	9.  <del> TEXT </del>							: To StrikeThrough Text.
+	10. <ins> TEXT </ins>							: Used to underline a text marking the part as inserted or added.
+	11. <q> TEXT </q>							: Used to set a set of text inside the quotation marks.
+	12. <blockquote> TEXT </blockquote>					: It changes the alignment to make it unique from others.
+	13. <address> TEXT </address>						: Defines an address in a webpage.
+	14. <abbr> TEXT </abbr>							: Define a text as an acronym and show full version on HOVERING MOUSE.
+	15. <bdo dir="rtl"> TEXT </bdo>						: Used to change the direction of printing the text on browser.
+
+
+7.   Attributes			: General Syntax : <element attribute_name = "attribute_value">
+
+	1.   <img src= "address"> 						: Used to add image on web page.(address can be - Location or Link)
+	2.   <img src = "address" alt = "address">				: Opens the alternative address if source link fails to load or empty.
+	3.   <...width = "value px" height = "value px"...>			: This attribute is used to adjust the width and height of an image.
+	4.   <...element id = "value"...> TEXT </>				: Provide a unique identification to an element.
+	5.   <...element title = "value" ...> TEXT </>				: Explain an element on hovering the mouse over it.
+	6.   <...a href = "address"...> TEXT </a>				: Used to specify a link to any address. Used along with <a> tag
+		
+		1. <a href="address"> Click Here </a>				: Opens address on clicking 'Click Here' in SAME TAB. 
+		2. <a href="address" target = "_blank"> Click Here </a>		: Opens address on clicking 'Click Here' in OTHER TAB.
+
+	7.   <html lang = "value">						: Declaring a language can be important for SEO. (USED WITH HTML TAG)
+	8.   <... style = "value"> TEXT </>					: Used to provide various CSS effects.
+
+
+8.   Tables
+	1.   <table>...</table>							: To Define a table.
+	2.   <th> TEXT </th>							: To define Heading of each column.
+	3.   <tr>...</tr>							: To switch between the rows.
+	4.   <td> TEXT </td>							: To ADD data in each corresponding cell.
+	5.   <style>
+		table, th, td { border: 1px solid black; } 			: To add border to the HTML Tables.
+    	     </style> 
+
+	6.   <style>
+		table(or other){ border-collapse: collapse; }			: To add collapsed border in HTML Tables.
+	     </style>
+	
+	7.   <style>
+        	th(or other){ padding: 20px; }					: To Add Space between the borders and the data. 
+    	     </style>
+
+	8.   <style> 
+                th(or other) { text-align: left / right / center; }		: To Align the text in specified value.
+	     </style>
+
+	9.   <style>
+		table(or other) { border-spacing: 5px; }			: To add spaces between the cells.
+	     </style> 
+
+	10.  <th(or other) colspan="value"> TEXT </th>				: To merge the n column cells next to it.
+	11.  <th(or other) rowspan="value"> TEXT </th>				: To merge the n row cells next to it.
+	12.  <caption> TABLE HEADING </caption>					: To add HEADING TO TABLE.
+	13.  <table # table_id> { background-color: value; }			: To add color to the table.
+
+9.   List
+	0.   <li> TEXT </li>							: Defines the Text as List.	
+	1.   <ul style="list-style-type:disc / circle / square"> TEXT </ul>	: Unordered List - USES BULLETS (By default - disc)   
+	2.   <ol type= "1" / "A" / "a" / "I"  / "i"> 				: Ordered List - USES NUMBERS, LETTERS, ROMAN NUMBERS
+	3.   <dl>...</dl>							: Definition List - AS IN DICTIONARY.
+		1.   <dt> TEXT </dt>						: To Define the text as list in definition list. (SAME WORK AS <li> tag)
+		2.   <dd> TEXT </dd>						: To give description (Adds margin to the text)
+
+10.  SpellCheck
+	1.   <input type="text" spellcheck="true / false">			: To Check for spelling errors when user inputs in input field.
+	2.   <textarea type="text" spellcheck="true / false"></textarea>	: To Check for spelling errors when user inputs in text area field.
+
+11.  Color Codes
+
+	1.   Hexadecimal Codes:
+	     <style>
+		h1(or other) { color: # XX XX XX; }			   	: 1st 2 - Intensity of Red, Next - Green, Last - Blue. (RANGE -> 0-F)
+	     </style>
+
+	2.   RGB Codes:
+	     <style>
+		h1(or other) { color: rgb(X, X, X); }				: 1st - red, 2nd - green, 3rd - blue. (Range -> 0(Black) - 255(White)) 
+	     </style>
+
+	3.   RGBA Codes:
+	     <style>
+		h1(or other) { color: rgba(r, g, b, alpha); }		   	: Range -> 0(Black) - 255(White) and Range of Alpha 0-1 (Degree of transparency)
+	     </style>
+
+	4.   HSL Codes:
+	     <style>					   			: Hue is color of image. Ranges from 0 to 360. 0 - Red, 120 - Green, 240 - Blue.
+		h1(or other) { color: hsl(hue, saturation, lightness); }   	: Saturation is the purity of the hue. 0% - shade of gray, 100% - full color.
+	     </style>							   	: Lightness is the color space’s brightness. 0% - black, 100% - white.
+
+12.  
